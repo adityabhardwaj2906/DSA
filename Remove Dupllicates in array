@@ -1,0 +1,20 @@
+// Method - 1 
+#include <bits/stdc++.h>
+using namespace std;
+
+void removeDuplicates(vector<int> &arr){
+    set<int> st;
+    for(int x: arr){
+        st.insert(x);
+    }
+    for(auto it: st){
+        cout<<it<<" ";
+    }
+}
+
+int main(){
+    vector <int> arr = {1,1,2,2,2,3,4,4,4,5,5,6,7,7,8};
+    removeDuplicates(arr);
+}
+
+// Method - 2
